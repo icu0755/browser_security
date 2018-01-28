@@ -46,3 +46,9 @@ X-Frame-Options: DENY
 X-Frame-Options: SAMEORIGIN
 X-Frame-Options: ALLOW-FROM https://example.com/
 ```
+
+## [Same Origin Policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
+The same-origin policy restricts how a document or script loaded from one origin can interact with a resource from another origin. It is a critical security mechanism for isolating potentially malicious documents.
+
+## [CORS](https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS)
+## [Cross-site Request Forgery CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
