@@ -34,3 +34,15 @@ Content-Security-Policy: <policy-directive>; <policy-directive>
 Content-Security-Policy-Report-Only: <policy-directive>; <policy-directive>
 ```
 To ease deployment, CSP can be deployed in report-only mode. The policy is not enforced, but any violations are reported to a provided URI. Additionally, a report-only header can be used to test a future revision to a policy without actually deploying it.
+
+## [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
+
+The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe> or <object> . Sites can use this to avoid clickjacking attacks, by ensuring that their content is not embedded into other sites.
+
+### Syntax
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+```
+X-Frame-Options: DENY
+X-Frame-Options: SAMEORIGIN
+X-Frame-Options: ALLOW-FROM https://example.com/
+```
