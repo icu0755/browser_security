@@ -52,3 +52,5 @@ The same-origin policy restricts how a document or script loaded from one origin
 
 ## [CORS](https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS)
 ## [Cross-site Request Forgery CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
+## [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
+## [HTTP Public Key Pinning (HPKP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning)
