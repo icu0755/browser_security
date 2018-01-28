@@ -28,3 +28,9 @@ Content-Security-Policy: <policy-directive>; <policy-directive>
 ```
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
 ```
+
+### Testing your policy
+```
+Content-Security-Policy-Report-Only: <policy-directive>; <policy-directive>
+```
+To ease deployment, CSP can be deployed in report-only mode. The policy is not enforced, but any violations are reported to a provided URI. Additionally, a report-only header can be used to test a future revision to a policy without actually deploying it.
