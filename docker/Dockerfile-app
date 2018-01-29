@@ -1,0 +1,11 @@
+FROM node:carbon
+RUN mkdir -p /code && \
+    openssl req -new -x509 -days 365 -nodes \
+      -out /code/selfsigned.crt \
+      -keyout /code/selfsigned.key \
+      -subj "/CN=example.local"
+WORKDIR /code
+COPY package.json /code
+RUN npm install
+COPY src/ .
+CMD node server.js
