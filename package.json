@@ -1,0 +1,22 @@
+{
+  "name": "browser_security",
+  "version": "1.0.0",
+  "description": "## [HTTP Strict Transport Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icu0755/browser_security.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icu0755/browser_security/issues"
+  },
+  "homepage": "https://github.com/icu0755/browser_security#readme",
+  "dependencies": {
+    "hapi": "^17.2.0"
+  }
+}
