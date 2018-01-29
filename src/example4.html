@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CORS</title>
+</head>
+<body>
+<h1>CORS</h1>
+<script>
+    var invocation = new XMLHttpRequest();
+    var url = 'https://cleverup.me/example4.json';
+
+    function callOtherDomain() {
+        if (invocation) {
+            invocation.open('GET', url, true);
+            invocation.onreadystatechange = () => {
+                if(invocation.readyState === XMLHttpRequest.DONE && invocation.status === 200) {
+                    console.log(invocation.responseText);
+                }
+            };
+            invocation.send();
+        }
+    }
+
+    callOtherDomain();
+</script>
+</body>
+</html>
