@@ -51,6 +51,14 @@ X-Frame-Options: ALLOW-FROM https://example.com/
 The same-origin policy restricts how a document or script loaded from one origin can interact with a resource from another origin. It is a critical security mechanism for isolating potentially malicious documents.
 
 ## [CORS](https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS)
+A resource makes a cross-origin HTTP request when it requests a resource from a different domain, 
+or port than the one which the first resource itself serves. For example, an HTML page served from 
+http://domain-a.com makes an `<img>` src request for http://domain-b.com/image.jpg.
+
+For security reasons, browsers restrict cross-origin HTTP requests initiated from within scripts. 
+For example, XMLHttpRequest and Fetch follow the same-origin policy. So, a web application 
+using XMLHttpRequest or Fetch could only make HTTP requests to its own domain.
+
 ## [Cross-site Request Forgery CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
 ## [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
 ## [HTTP Public Key Pinning (HPKP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning)
